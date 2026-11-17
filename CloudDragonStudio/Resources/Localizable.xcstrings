@@ -175,6 +175,132 @@
         "en" : { "stringUnit" : { "state" : "translated", "value" : "Ready in the next studio loop!" } },
         "vi" : { "stringUnit" : { "state" : "translated", "value" : "Sẽ mở đầy đủ ở vòng tiếp theo!" } }
       }
+    },
+    "scale.zone.scales" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Scales" } },
+        "vi" : { "stringUnit" : { "state" : "translated", "value" : "Vảy" } }
+      }
+    },
+    "scale.zone.horns" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Horns" } },
+        "vi" : { "stringUnit" : { "state" : "translated", "value" : "Sừng" } }
+      }
+    },
+    "scale.zone.wings" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Wings" } },
+        "vi" : { "stringUnit" : { "state" : "translated", "value" : "Cánh" } }
+      }
+    },
+    "scale.zone.tail" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Tail" } },
+        "vi" : { "stringUnit" : { "state" : "translated", "value" : "Đuôi" } }
+      }
+    },
+    "scale.tool.solid" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Brush" } },
+        "vi" : { "stringUnit" : { "state" : "translated", "value" : "Cọ" } }
+      }
+    },
+    "scale.tool.rainbow" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Rainbow" } },
+        "vi" : { "stringUnit" : { "state" : "translated", "value" : "Cầu vồng" } }
+      }
+    },
+    "scale.tool.dots" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Dots" } },
+        "vi" : { "stringUnit" : { "state" : "translated", "value" : "Chấm bi" } }
+      }
+    },
+    "scale.tool.stripes" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Stripes" } },
+        "vi" : { "stringUnit" : { "state" : "translated", "value" : "Sọc" } }
+      }
+    },
+    "scale.tool.star" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Star" } },
+        "vi" : { "stringUnit" : { "state" : "translated", "value" : "Sao" } }
+      }
+    },
+    "scale.tool.heart" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Heart" } },
+        "vi" : { "stringUnit" : { "state" : "translated", "value" : "Tim" } }
+      }
+    },
+    "scale.tool.moon" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Moon" } },
+        "vi" : { "stringUnit" : { "state" : "translated", "value" : "Trăng" } }
+      }
+    },
+    "scale.tool.cloud" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Cloud" } },
+        "vi" : { "stringUnit" : { "state" : "translated", "value" : "Mây" } }
+      }
+    },
+    "scale.undo" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Undo" } },
+        "vi" : { "stringUnit" : { "state" : "translated", "value" : "Hoàn tác" } }
+      }
+    },
+    "scale.redo" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Redo" } },
+        "vi" : { "stringUnit" : { "state" : "translated", "value" : "Làm lại" } }
+      }
+    },
+    "scale.clear" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Clear" } },
+        "vi" : { "stringUnit" : { "state" : "translated", "value" : "Xóa hết" } }
+      }
+    },
+    "scale.size" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Brush Size" } },
+        "vi" : { "stringUnit" : { "state" : "translated", "value" : "Cỡ nét" } }
+      }
+    },
+    "scale.hue" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Hue" } },
+        "vi" : { "stringUnit" : { "state" : "translated", "value" : "Sắc màu" } }
+      }
+    },
+    "scale.hint" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Drag to paint!" } },
+        "vi" : { "stringUnit" : { "state" : "translated", "value" : "Kéo tay để tô nhé!" } }
+      }
     }
   },
   "version" : "1.0"

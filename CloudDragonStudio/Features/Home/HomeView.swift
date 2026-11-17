@@ -25,10 +25,12 @@ struct HomeView: View {
                     if isLandscape {
                         HStack(spacing: 20) {
                             dragonShowcaseCard
-                                .frame(maxWidth: isPadLike ? 380 : geo.size.width * 0.38)
-                            VStack(spacing: 12) {
-                                areasGrid(columnsCount: isPadLike ? 3 : 2)
+                                .frame(maxWidth: isPadLike ? 400 : geo.size.width * 0.38)
+                            VStack(spacing: 14) {
+                                Spacer(minLength: 0)
+                                areasGrid(columnsCount: isPadLike ? 3 : 2, compactPhone: false)
                                 modesRow
+                                Spacer(minLength: 0)
                             }
                         }
                         .padding(.horizontal, 20)
@@ -38,7 +40,7 @@ struct HomeView: View {
                             VStack(spacing: 14) {
                                 dragonShowcaseCard
                                     .frame(height: min(260, geo.size.height * 0.34))
-                                areasGrid(columnsCount: 2)
+                                areasGrid(columnsCount: 2, compactPhone: true)
                                 modesRow
                             }
                             .padding(.horizontal, 16)
@@ -63,6 +65,7 @@ struct HomeView: View {
                     .font(.system(.caption, design: .rounded).weight(.semibold))
                     .foregroundStyle(PastelPalette.mutedText.swiftUIColor)
                     .lineLimit(1)
+                    .minimumScaleFactor(0.8)
             }
 
             Spacer()
@@ -96,8 +99,12 @@ struct HomeView: View {
 
     private var dragonShowcaseCard: some View {
         VStack(spacing: 8) {
-            DragonView(character: container.character, reduceMotion: reduceMotion)
-                .frame(maxWidth: .infinity, maxHeight: .infinity)
+            DragonView(
+                character: container.character,
+                reduceMotion: reduceMotion,
+                zonePaintImages: container.zonePaintImages
+            )
+            .frame(maxWidth: .infinity, maxHeight: .infinity)
 
             Text(localization.text("home.dragon_greeting"))
                 .font(.system(.subheadline, design: .rounded).weight(.bold))
@@ -121,7 +128,7 @@ struct HomeView: View {
         )
     }
 
-    private func areasGrid(columnsCount: Int) -> some View {
+    private func areasGrid(columnsCount: Int, compactPhone: Bool) -> some View {
         let items: [AreaTileModel] = [
             AreaTileModel(
                 destination: .cloudBath,
@@ -187,7 +194,8 @@ struct HomeView: View {
                     subtitle: localization.text(item.descKey),
                     tint: item.tint.swiftUIColor,
                     accent: item.accent.swiftUIColor,
-                    symbol: item.symbol
+                    symbol: item.symbol,
+                    compactPhone: compactPhone
                 ) {
                     haptics.tap(reduceMotion: reduceMotion)
                     router.open(item.destination)
@@ -250,37 +258,39 @@ private struct AreaCardButton: View {
     let tint: Color
     let accent: Color
     let symbol: String
+    let compactPhone: Bool
     let action: () -> Void
 
     var body: some View {
         Button(action: action) {
-            HStack(spacing: 12) {
+            HStack(spacing: compactPhone ? 9 : 12) {
                 ZStack {
                     Circle()
                         .fill(tint.opacity(0.85))
-                        .frame(width: 48, height: 48)
+                        .frame(width: compactPhone ? 40 : 48, height: compactPhone ? 40 : 48)
                     Image(systemName: symbol)
-                        .font(.system(size: 21, weight: .bold))
+                        .font(.system(size: compactPhone ? 18 : 21, weight: .bold))
                         .foregroundStyle(PastelPalette.inkText.swiftUIColor)
                 }
 
-                VStack(alignment: .leading, spacing: 3) {
+                VStack(alignment: .leading, spacing: 2) {
                     Text(title)
-                        .font(.system(.headline, design: .rounded).weight(.heavy))
+                        .font(.system(compactPhone ? .subheadline : .headline, design: .rounded).weight(.heavy))
                         .foregroundStyle(PastelPalette.inkText.swiftUIColor)
                         .lineLimit(1)
-                        .minimumScaleFactor(0.8)
+                        .minimumScaleFactor(0.75)
                     Text(subtitle)
                         .font(.system(.caption, design: .rounded).weight(.medium))
                         .foregroundStyle(PastelPalette.mutedText.swiftUIColor)
                         .lineLimit(2)
+                        .minimumScaleFactor(0.85)
                         .multilineTextAlignment(.leading)
                 }
 
                 Spacer(minLength: 0)
             }
-            .padding(12)
-            .frame(maxWidth: .infinity, minHeight: 74, alignment: .leading)
+            .padding(compactPhone ? 10 : 14)
+            .frame(maxWidth: .infinity, minHeight: compactPhone ? 74 : 92, alignment: .leading)
             .background(
                 RoundedRectangle(cornerRadius: 22, style: .continuous)
                     .fill(.white.opacity(0.90))
