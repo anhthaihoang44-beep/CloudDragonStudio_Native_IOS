@@ -1,6 +1,77 @@
 import CoreGraphics
+import Foundation
 import SwiftUI
 import UIKit
+
+enum DragonRenderLayer: Int, CaseIterable, Comparable, Sendable {
+    case backWingsDeco = 0
+    case tail = 1
+    case wings = 2
+    case dorsalSpikes = 3
+    case horns = 4
+    case body = 5
+    case belly = 6
+    case robe = 7
+    case paws = 8
+    case face = 9
+    case glasses = 10
+    case scarf = 11
+    case hat = 12
+    case floatingHalo = 13
+    case selectionAura = 14
+
+    static func < (lhs: DragonRenderLayer, rhs: DragonRenderLayer) -> Bool {
+        lhs.rawValue < rhs.rawValue
+    }
+}
+
+enum LayerCompositor {
+    static func orderedLayers(
+        for character: CloudDragonCharacter,
+        highlightedZone: DragonZone? = nil
+    ) -> [DragonRenderLayer] {
+        var layers: [DragonRenderLayer] = []
+        if let wingsId = character.equippedItems[ItemCategory.wingsDeco.rawValue],
+           wingsId != "wings_halo" {
+            layers.append(.backWingsDeco)
+        }
+        layers.append(contentsOf: [.tail, .wings, .dorsalSpikes, .horns, .body, .belly])
+        if character.equippedItems[ItemCategory.robe.rawValue] != nil {
+            layers.append(.robe)
+        }
+        layers.append(contentsOf: [.paws, .face])
+        if character.equippedItems[ItemCategory.glasses.rawValue] != nil {
+            layers.append(.glasses)
+        }
+        if character.equippedItems[ItemCategory.scarf.rawValue] != nil {
+            layers.append(.scarf)
+        }
+        if character.equippedItems[ItemCategory.hat.rawValue] != nil {
+            layers.append(.hat)
+        }
+        if character.equippedItems[ItemCategory.wingsDeco.rawValue] == "wings_halo" {
+            layers.append(.floatingHalo)
+        }
+        if highlightedZone != nil {
+            layers.append(.selectionAura)
+        }
+        return layers.sorted()
+    }
+
+    static func resolvedColor(
+        for itemId: String,
+        character: CloudDragonCharacter,
+        catalog: [CatalogItem]
+    ) -> CodableColor {
+        if let custom = character.equippedColors[itemId] {
+            return custom
+        }
+        if let item = catalog.first(where: { $0.id == itemId }) {
+            return item.defaultColor
+        }
+        return PastelPalette.butterYellow
+    }
+}
 
 enum CoreGraphicsDragonDrawer {
     static func drawDragon(
