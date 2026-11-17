@@ -1,0 +1,182 @@
+[
+  {
+    "id": "hat_star_crown",
+    "category": "hat",
+    "nameEn": "Star Crown",
+    "nameVi": "Vương Miện Sao",
+    "defaultColor": { "red": 1.0, "green": 0.878, "blue": 0.4, "alpha": 1.0 },
+    "isFree": true,
+    "previewSymbol": "crown"
+  },
+  {
+    "id": "hat_cloud_beret",
+    "category": "hat",
+    "nameEn": "Cloud Beret",
+    "nameVi": "Mũ Mây Bồng",
+    "defaultColor": { "red": 0.471, "green": 0.784, "blue": 0.941, "alpha": 1.0 },
+    "isFree": true,
+    "previewSymbol": "cloud"
+  },
+  {
+    "id": "hat_flower_wreath",
+    "category": "hat",
+    "nameEn": "Flower Wreath",
+    "nameVi": "Vòng Hoa Chuông",
+    "defaultColor": { "red": 1.0, "green": 0.553, "blue": 0.631, "alpha": 1.0 },
+    "isFree": true,
+    "previewSymbol": "flower"
+  },
+  {
+    "id": "hat_nightcap",
+    "category": "hat",
+    "nameEn": "Crescent Cap",
+    "nameVi": "Mũ Ngủ Trăng",
+    "defaultColor": { "red": 0.78, "green": 0.694, "blue": 0.91, "alpha": 1.0 },
+    "isFree": true,
+    "previewSymbol": "moon"
+  },
+  {
+    "id": "hat_dragon_tiara",
+    "category": "hat",
+    "nameEn": "Dragon Tiara",
+    "nameVi": "Vương Miện Rồng",
+    "defaultColor": { "red": 0.447, "green": 0.847, "blue": 0.69, "alpha": 1.0 },
+    "isFree": false,
+    "previewSymbol": "tiara"
+  },
+  {
+    "id": "robe_cloud_cape",
+    "category": "robe",
+    "nameEn": "Cloud Cape",
+    "nameVi": "Áo Choàng Mây",
+    "defaultColor": { "red": 0.471, "green": 0.784, "blue": 0.941, "alpha": 1.0 },
+    "isFree": true,
+    "previewSymbol": "cape"
+  },
+  {
+    "id": "robe_pastel_dress",
+    "category": "robe",
+    "nameEn": "Fluffy Dress",
+    "nameVi": "Váy Bồng Xòe",
+    "defaultColor": { "red": 1.0, "green": 0.553, "blue": 0.631, "alpha": 1.0 },
+    "isFree": true,
+    "previewSymbol": "dress"
+  },
+  {
+    "id": "robe_starry_vest",
+    "category": "robe",
+    "nameEn": "Starry Vest",
+    "nameVi": "Áo Gi-lê Sao",
+    "defaultColor": { "red": 1.0, "green": 0.878, "blue": 0.4, "alpha": 1.0 },
+    "isFree": true,
+    "previewSymbol": "vest"
+  },
+  {
+    "id": "robe_night_gown",
+    "category": "robe",
+    "nameEn": "Moonlit Gown",
+    "nameVi": "Áo Lụa Đêm Sao",
+    "defaultColor": { "red": 0.78, "green": 0.694, "blue": 0.91, "alpha": 1.0 },
+    "isFree": false,
+    "previewSymbol": "gown"
+  },
+  {
+    "id": "scarf_ribbon",
+    "category": "scarf",
+    "nameEn": "Silk Ribbon Bow",
+    "nameVi": "Nơ Lụa Mềm",
+    "defaultColor": { "red": 1.0, "green": 0.69, "blue": 0.533, "alpha": 1.0 },
+    "isFree": true,
+    "previewSymbol": "bow"
+  },
+  {
+    "id": "scarf_cloud_boa",
+    "category": "scarf",
+    "nameEn": "Warm Cloud Scarf",
+    "nameVi": "Khăn Choàng Ấm",
+    "defaultColor": { "red": 0.847, "green": 0.945, "blue": 0.992, "alpha": 1.0 },
+    "isFree": true,
+    "previewSymbol": "scarf"
+  },
+  {
+    "id": "scarf_bell_choker",
+    "category": "scarf",
+    "nameEn": "Windchime Bell",
+    "nameVi": "Chuông Gió Nhỏ",
+    "defaultColor": { "red": 1.0, "green": 0.878, "blue": 0.4, "alpha": 1.0 },
+    "isFree": true,
+    "previewSymbol": "bell"
+  },
+  {
+    "id": "scarf_pearl_necklace",
+    "category": "scarf",
+    "nameEn": "Cloud Pearls",
+    "nameVi": "Vòng Ngọc Mây",
+    "defaultColor": { "red": 0.447, "green": 0.847, "blue": 0.69, "alpha": 1.0 },
+    "isFree": true,
+    "previewSymbol": "pearls"
+  },
+  {
+    "id": "glasses_star",
+    "category": "glasses",
+    "nameEn": "Star Glasses",
+    "nameVi": "Kính Ngôi Sao",
+    "defaultColor": { "red": 1.0, "green": 0.878, "blue": 0.4, "alpha": 1.0 },
+    "isFree": true,
+    "previewSymbol": "star_glasses"
+  },
+  {
+    "id": "glasses_heart",
+    "category": "glasses",
+    "nameEn": "Heart Shades",
+    "nameVi": "Kính Trái Tim",
+    "defaultColor": { "red": 1.0, "green": 0.553, "blue": 0.631, "alpha": 1.0 },
+    "isFree": true,
+    "previewSymbol": "heart_glasses"
+  },
+  {
+    "id": "glasses_cloud_mask",
+    "category": "glasses",
+    "nameEn": "Masquerade Mask",
+    "nameVi": "Mặt Nạ Vũ Hội",
+    "defaultColor": { "red": 0.78, "green": 0.694, "blue": 0.91, "alpha": 1.0 },
+    "isFree": false,
+    "previewSymbol": "mask"
+  },
+  {
+    "id": "wings_sparkle",
+    "category": "wingsDeco",
+    "nameEn": "Fairy Wings",
+    "nameVi": "Cánh Bướm Tiên",
+    "defaultColor": { "red": 0.447, "green": 0.847, "blue": 0.69, "alpha": 1.0 },
+    "isFree": true,
+    "previewSymbol": "fairy_wings"
+  },
+  {
+    "id": "wings_feather",
+    "category": "wingsDeco",
+    "nameEn": "Feather Wings",
+    "nameVi": "Cánh Lông Vũ",
+    "defaultColor": { "red": 0.78, "green": 0.694, "blue": 0.91, "alpha": 1.0 },
+    "isFree": true,
+    "previewSymbol": "feather_wings"
+  },
+  {
+    "id": "wings_rainbow_bow",
+    "category": "wingsDeco",
+    "nameEn": "Sky Ribbon",
+    "nameVi": "Nơ Lưng Cầu Vồng",
+    "defaultColor": { "red": 1.0, "green": 0.69, "blue": 0.533, "alpha": 1.0 },
+    "isFree": true,
+    "previewSymbol": "back_bow"
+  },
+  {
+    "id": "wings_halo",
+    "category": "wingsDeco",
+    "nameEn": "Star Halo",
+    "nameVi": "Vòng Hào Quang",
+    "defaultColor": { "red": 1.0, "green": 0.878, "blue": 0.4, "alpha": 1.0 },
+    "isFree": false,
+    "previewSymbol": "halo"
+  }
+]

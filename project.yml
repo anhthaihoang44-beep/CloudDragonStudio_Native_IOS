@@ -91,8 +91,10 @@ schemes:
         CloudDragonStudioUITests: [test]
     run:
       config: Debug
+      storeKitConfiguration: CloudDragonStudio/Resources/CloudDragonStudio.storekit
     test:
       config: Debug
+      storeKitConfiguration: CloudDragonStudio/Resources/CloudDragonStudio.storekit
       targets:
         - CloudDragonStudioTests
         - CloudDragonStudioUITests

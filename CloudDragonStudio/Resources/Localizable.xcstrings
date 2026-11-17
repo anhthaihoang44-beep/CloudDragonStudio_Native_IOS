@@ -1,307 +1,486 @@
 {
   "sourceLanguage" : "en",
   "strings" : {
-    "app.title" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : { "stringUnit" : { "state" : "translated", "value" : "Cloud Dragon Studio" } },
-        "vi" : { "stringUnit" : { "state" : "translated", "value" : "Xưởng Rồng Mây" } }
-      }
-    },
-    "app.subtitle" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : { "stringUnit" : { "state" : "translated", "value" : "A cozy sky town for styling baby dragons" } },
-        "vi" : { "stringUnit" : { "state" : "translated", "value" : "Thị trấn trên mây dịu êm cho bé rồng" } }
-      }
-    },
-    "nav.home" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : { "stringUnit" : { "state" : "translated", "value" : "Home" } },
-        "vi" : { "stringUnit" : { "state" : "translated", "value" : "Trang chủ" } }
-      }
-    },
-    "nav.back" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : { "stringUnit" : { "state" : "translated", "value" : "Back" } },
-        "vi" : { "stringUnit" : { "state" : "translated", "value" : "Quay lại" } }
-      }
-    },
-    "area.bath" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : { "stringUnit" : { "state" : "translated", "value" : "Cloud Bath" } },
-        "vi" : { "stringUnit" : { "state" : "translated", "value" : "Tắm Mây" } }
-      }
-    },
-    "area.bath.desc" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : { "stringUnit" : { "state" : "translated", "value" : "Bubbly foam scrub & gentle rinse" } },
-        "vi" : { "stringUnit" : { "state" : "translated", "value" : "Xoa bọt mây và xả nước dịu nhẹ" } }
-      }
-    },
-    "area.scale" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : { "stringUnit" : { "state" : "translated", "value" : "Scale Studio" } },
-        "vi" : { "stringUnit" : { "state" : "translated", "value" : "Xưởng Vảy" } }
-      }
-    },
-    "area.scale.desc" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : { "stringUnit" : { "state" : "translated", "value" : "Paint colors, patterns & stamps" } },
-        "vi" : { "stringUnit" : { "state" : "translated", "value" : "Tô màu, họa tiết và tem xinh" } }
-      }
-    },
-    "area.wardrobe" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : { "stringUnit" : { "state" : "translated", "value" : "Wardrobe" } },
-        "vi" : { "stringUnit" : { "state" : "translated", "value" : "Tủ Đồ" } }
-      }
-    },
-    "area.wardrobe.desc" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : { "stringUnit" : { "state" : "translated", "value" : "Recolorable hats, scarves & wings" } },
-        "vi" : { "stringUnit" : { "state" : "translated", "value" : "Mũ, khăn, cánh và trang phục đổi màu" } }
-      }
-    },
-    "area.bake" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : { "stringUnit" : { "state" : "translated", "value" : "Bake Nook" } },
-        "vi" : { "stringUnit" : { "state" : "translated", "value" : "Góc Bánh" } }
-      }
-    },
-    "area.bake.desc" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : { "stringUnit" : { "state" : "translated", "value" : "Bake & decorate star treats" } },
-        "vi" : { "stringUnit" : { "state" : "translated", "value" : "Nướng và trang trí bánh sao mây" } }
-      }
-    },
-    "area.pets" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : { "stringUnit" : { "state" : "translated", "value" : "Pet Garden" } },
-        "vi" : { "stringUnit" : { "state" : "translated", "value" : "Vườn Thú" } }
-      }
-    },
-    "area.pets.desc" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : { "stringUnit" : { "state" : "translated", "value" : "Care & play with tiny sky pets" } },
-        "vi" : { "stringUnit" : { "state" : "translated", "value" : "Chăm sóc và chơi cùng bạn thú nhỏ" } }
-      }
-    },
-    "area.photo" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : { "stringUnit" : { "state" : "translated", "value" : "Photo Booth" } },
-        "vi" : { "stringUnit" : { "state" : "translated", "value" : "Góc Chụp Ảnh" } }
-      }
-    },
-    "area.photo.desc" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : { "stringUnit" : { "state" : "translated", "value" : "Poses, backdrops & cloud album" } },
-        "vi" : { "stringUnit" : { "state" : "translated", "value" : "Chọn phông mây và lưu ảnh kỷ niệm" } }
-      }
-    },
-    "mode.free_studio" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : { "stringUnit" : { "state" : "translated", "value" : "Save Slots" } },
-        "vi" : { "stringUnit" : { "state" : "translated", "value" : "Ô Lưu" } }
-      }
-    },
-    "mode.daily_wish" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : { "stringUnit" : { "state" : "translated", "value" : "Daily Wish" } },
-        "vi" : { "stringUnit" : { "state" : "translated", "value" : "Điều Ước" } }
-      }
-    },
-    "mode.sticker_book" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : { "stringUnit" : { "state" : "translated", "value" : "Stickers" } },
-        "vi" : { "stringUnit" : { "state" : "translated", "value" : "Nhãn Dán" } }
-      }
-    },
-    "mode.settings" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : { "stringUnit" : { "state" : "translated", "value" : "Settings" } },
-        "vi" : { "stringUnit" : { "state" : "translated", "value" : "Cài Đặt" } }
-      }
-    },
-    "home.dragon_greeting" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : { "stringUnit" : { "state" : "translated", "value" : "Pick any cloud studio to play!" } },
-        "vi" : { "stringUnit" : { "state" : "translated", "value" : "Chọn một góc trên mây để chơi nhé!" } }
-      }
-    },
-    "dragon.default_name" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : { "stringUnit" : { "state" : "translated", "value" : "Puff" } },
-        "vi" : { "stringUnit" : { "state" : "translated", "value" : "Bông Mây" } }
-      }
-    },
-    "settings.language" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : { "stringUnit" : { "state" : "translated", "value" : "Language" } },
-        "vi" : { "stringUnit" : { "state" : "translated", "value" : "Ngôn ngữ" } }
-      }
-    },
-    "settings.reduce_motion" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : { "stringUnit" : { "state" : "translated", "value" : "Reduce Motion" } },
-        "vi" : { "stringUnit" : { "state" : "translated", "value" : "Giảm chuyển động" } }
-      }
-    },
-    "stub.coming_next" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : { "stringUnit" : { "state" : "translated", "value" : "Ready in the next studio loop!" } },
-        "vi" : { "stringUnit" : { "state" : "translated", "value" : "Sẽ mở đầy đủ ở vòng tiếp theo!" } }
-      }
-    },
-    "scale.zone.scales" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : { "stringUnit" : { "state" : "translated", "value" : "Scales" } },
-        "vi" : { "stringUnit" : { "state" : "translated", "value" : "Vảy" } }
-      }
-    },
-    "scale.zone.horns" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : { "stringUnit" : { "state" : "translated", "value" : "Horns" } },
-        "vi" : { "stringUnit" : { "state" : "translated", "value" : "Sừng" } }
-      }
-    },
-    "scale.zone.wings" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : { "stringUnit" : { "state" : "translated", "value" : "Wings" } },
-        "vi" : { "stringUnit" : { "state" : "translated", "value" : "Cánh" } }
-      }
-    },
-    "scale.zone.tail" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : { "stringUnit" : { "state" : "translated", "value" : "Tail" } },
-        "vi" : { "stringUnit" : { "state" : "translated", "value" : "Đuôi" } }
-      }
-    },
-    "scale.tool.solid" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : { "stringUnit" : { "state" : "translated", "value" : "Brush" } },
-        "vi" : { "stringUnit" : { "state" : "translated", "value" : "Cọ" } }
-      }
-    },
-    "scale.tool.rainbow" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : { "stringUnit" : { "state" : "translated", "value" : "Rainbow" } },
-        "vi" : { "stringUnit" : { "state" : "translated", "value" : "Cầu vồng" } }
-      }
-    },
-    "scale.tool.dots" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : { "stringUnit" : { "state" : "translated", "value" : "Dots" } },
-        "vi" : { "stringUnit" : { "state" : "translated", "value" : "Chấm bi" } }
-      }
-    },
-    "scale.tool.stripes" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : { "stringUnit" : { "state" : "translated", "value" : "Stripes" } },
-        "vi" : { "stringUnit" : { "state" : "translated", "value" : "Sọc" } }
-      }
-    },
-    "scale.tool.star" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : { "stringUnit" : { "state" : "translated", "value" : "Star" } },
-        "vi" : { "stringUnit" : { "state" : "translated", "value" : "Sao" } }
-      }
-    },
-    "scale.tool.heart" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : { "stringUnit" : { "state" : "translated", "value" : "Heart" } },
-        "vi" : { "stringUnit" : { "state" : "translated", "value" : "Tim" } }
-      }
-    },
-    "scale.tool.moon" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : { "stringUnit" : { "state" : "translated", "value" : "Moon" } },
-        "vi" : { "stringUnit" : { "state" : "translated", "value" : "Trăng" } }
-      }
-    },
-    "scale.tool.cloud" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : { "stringUnit" : { "state" : "translated", "value" : "Cloud" } },
-        "vi" : { "stringUnit" : { "state" : "translated", "value" : "Mây" } }
-      }
-    },
-    "scale.undo" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : { "stringUnit" : { "state" : "translated", "value" : "Undo" } },
-        "vi" : { "stringUnit" : { "state" : "translated", "value" : "Hoàn tác" } }
-      }
-    },
-    "scale.redo" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : { "stringUnit" : { "state" : "translated", "value" : "Redo" } },
-        "vi" : { "stringUnit" : { "state" : "translated", "value" : "Làm lại" } }
-      }
-    },
-    "scale.clear" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : { "stringUnit" : { "state" : "translated", "value" : "Clear" } },
-        "vi" : { "stringUnit" : { "state" : "translated", "value" : "Xóa hết" } }
-      }
-    },
-    "scale.size" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : { "stringUnit" : { "state" : "translated", "value" : "Brush Size" } },
-        "vi" : { "stringUnit" : { "state" : "translated", "value" : "Cỡ nét" } }
-      }
-    },
-    "scale.hue" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : { "stringUnit" : { "state" : "translated", "value" : "Hue" } },
-        "vi" : { "stringUnit" : { "state" : "translated", "value" : "Sắc màu" } }
-      }
-    },
-    "scale.hint" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : { "stringUnit" : { "state" : "translated", "value" : "Drag to paint!" } },
-        "vi" : { "stringUnit" : { "state" : "translated", "value" : "Kéo tay để tô nhé!" } }
-      }
-    }
+    "app.title" : { "extractionState" : "manual", "localizations" : {
+      "en" : { "stringUnit" : { "state" : "translated", "value" : "Cloud Dragon Studio" } },
+      "vi" : { "stringUnit" : { "state" : "translated", "value" : "Cloud Dragon Studio" } }
+    }},
+    "app.subtitle" : { "extractionState" : "manual", "localizations" : {
+      "en" : { "stringUnit" : { "state" : "translated", "value" : "Cloud Dragon Styling Salon" } },
+      "vi" : { "stringUnit" : { "state" : "translated", "value" : "Tiệm tạo mẫu rồng mây" } }
+    }},
+    "nav.home" : { "extractionState" : "manual", "localizations" : {
+      "en" : { "stringUnit" : { "state" : "translated", "value" : "Home" } },
+      "vi" : { "stringUnit" : { "state" : "translated", "value" : "Trang chủ" } }
+    }},
+    "nav.back" : { "extractionState" : "manual", "localizations" : {
+      "en" : { "stringUnit" : { "state" : "translated", "value" : "Back" } },
+      "vi" : { "stringUnit" : { "state" : "translated", "value" : "Quay lại" } }
+    }},
+    "nav.sound_on" : { "extractionState" : "manual", "localizations" : {
+      "en" : { "stringUnit" : { "state" : "translated", "value" : "Sound On" } },
+      "vi" : { "stringUnit" : { "state" : "translated", "value" : "Bật âm" } }
+    }},
+    "nav.sound_off" : { "extractionState" : "manual", "localizations" : {
+      "en" : { "stringUnit" : { "state" : "translated", "value" : "Sound Off" } },
+      "vi" : { "stringUnit" : { "state" : "translated", "value" : "Tắt âm" } }
+    }},
+    "home.dragon_greeting" : { "extractionState" : "manual", "localizations" : {
+      "en" : { "stringUnit" : { "state" : "translated", "value" : "Happy & ready for a magical makeover!" } },
+      "vi" : { "stringUnit" : { "state" : "translated", "value" : "Bé rồng đang rất vui và sẵn sàng làm đẹp!" } }
+    }},
+    "home.style_dragon" : { "extractionState" : "manual", "localizations" : {
+      "en" : { "stringUnit" : { "state" : "translated", "value" : "Style Baby Dragon ✨" } },
+      "vi" : { "stringUnit" : { "state" : "translated", "value" : "Tạo Mẫu Rồng Con ✨" } }
+    }},
+    "area.scale" : { "extractionState" : "manual", "localizations" : {
+      "en" : { "stringUnit" : { "state" : "translated", "value" : "Scale Studio" } },
+      "vi" : { "stringUnit" : { "state" : "translated", "value" : "Xưởng Vảy" } }
+    }},
+    "area.scale.desc" : { "extractionState" : "manual", "localizations" : {
+      "en" : { "stringUnit" : { "state" : "translated", "value" : "Paint & Patterns" } },
+      "vi" : { "stringUnit" : { "state" : "translated", "value" : "Tô màu & vẽ hoa văn" } }
+    }},
+    "area.wardrobe" : { "extractionState" : "manual", "localizations" : {
+      "en" : { "stringUnit" : { "state" : "translated", "value" : "Wardrobe" } },
+      "vi" : { "stringUnit" : { "state" : "translated", "value" : "Tủ Đồ Mây" } }
+    }},
+    "area.wardrobe.desc" : { "extractionState" : "manual", "localizations" : {
+      "en" : { "stringUnit" : { "state" : "translated", "value" : "Outfits & Crowns" } },
+      "vi" : { "stringUnit" : { "state" : "translated", "value" : "Mũ nón & áo choàng" } }
+    }},
+    "area.bath" : { "extractionState" : "manual", "localizations" : {
+      "en" : { "stringUnit" : { "state" : "translated", "value" : "Cloud Bath" } },
+      "vi" : { "stringUnit" : { "state" : "translated", "value" : "Tắm Mây" } }
+    }},
+    "area.bath.desc" : { "extractionState" : "manual", "localizations" : {
+      "en" : { "stringUnit" : { "state" : "translated", "value" : "Bubble Bath & Spa" } },
+      "vi" : { "stringUnit" : { "state" : "translated", "value" : "Tắm bọt & sấy mây" } }
+    }},
+    "area.bake" : { "extractionState" : "manual", "localizations" : {
+      "en" : { "stringUnit" : { "state" : "translated", "value" : "Bake Nook" } },
+      "vi" : { "stringUnit" : { "state" : "translated", "value" : "Bếp Bánh" } }
+    }},
+    "area.bake.desc" : { "extractionState" : "manual", "localizations" : {
+      "en" : { "stringUnit" : { "state" : "translated", "value" : "Bake & Feed Treats" } },
+      "vi" : { "stringUnit" : { "state" : "translated", "value" : "Nướng bánh & cho ăn" } }
+    }},
+    "area.pets" : { "extractionState" : "manual", "localizations" : {
+      "en" : { "stringUnit" : { "state" : "translated", "value" : "Pet Garden" } },
+      "vi" : { "stringUnit" : { "state" : "translated", "value" : "Vườn Bạn Nhỏ" } }
+    }},
+    "area.pets.desc" : { "extractionState" : "manual", "localizations" : {
+      "en" : { "stringUnit" : { "state" : "translated", "value" : "Care for Cloud Pets" } },
+      "vi" : { "stringUnit" : { "state" : "translated", "value" : "Chăm sóc thú cưng" } }
+    }},
+    "area.photo" : { "extractionState" : "manual", "localizations" : {
+      "en" : { "stringUnit" : { "state" : "translated", "value" : "Photo Booth" } },
+      "vi" : { "stringUnit" : { "state" : "translated", "value" : "Studio Ảnh" } }
+    }},
+    "area.photo.desc" : { "extractionState" : "manual", "localizations" : {
+      "en" : { "stringUnit" : { "state" : "translated", "value" : "Snap & Photo Album" } },
+      "vi" : { "stringUnit" : { "state" : "translated", "value" : "Chụp ảnh & dán nhãn" } }
+    }},
+    "mode.free_studio" : { "extractionState" : "manual", "localizations" : {
+      "en" : { "stringUnit" : { "state" : "translated", "value" : "Free Studio" } },
+      "vi" : { "stringUnit" : { "state" : "translated", "value" : "Tự Do Sáng Tạo" } }
+    }},
+    "mode.daily_wish" : { "extractionState" : "manual", "localizations" : {
+      "en" : { "stringUnit" : { "state" : "translated", "value" : "Daily Wish" } },
+      "vi" : { "stringUnit" : { "state" : "translated", "value" : "Ước Mơ Hôm Nay" } }
+    }},
+    "mode.sticker_book" : { "extractionState" : "manual", "localizations" : {
+      "en" : { "stringUnit" : { "state" : "translated", "value" : "Sticker Book" } },
+      "vi" : { "stringUnit" : { "state" : "translated", "value" : "Sổ Sticker" } }
+    }},
+    "mode.settings" : { "extractionState" : "manual", "localizations" : {
+      "en" : { "stringUnit" : { "state" : "translated", "value" : "Settings" } },
+      "vi" : { "stringUnit" : { "state" : "translated", "value" : "Cài đặt" } }
+    }},
+    "mode.new_badge" : { "extractionState" : "manual", "localizations" : {
+      "en" : { "stringUnit" : { "state" : "translated", "value" : "New 🎁" } },
+      "vi" : { "stringUnit" : { "state" : "translated", "value" : "Mới 🎁" } }
+    }},
+    "mode.done_badge" : { "extractionState" : "manual", "localizations" : {
+      "en" : { "stringUnit" : { "state" : "translated", "value" : "Done ✨" } },
+      "vi" : { "stringUnit" : { "state" : "translated", "value" : "Xong ✨" } }
+    }},
+    "scale.zone.belly" : { "extractionState" : "manual", "localizations" : {
+      "en" : { "stringUnit" : { "state" : "translated", "value" : "Belly Scales" } },
+      "vi" : { "stringUnit" : { "state" : "translated", "value" : "Bụng vảy" } }
+    }},
+    "scale.zone.wings" : { "extractionState" : "manual", "localizations" : {
+      "en" : { "stringUnit" : { "state" : "translated", "value" : "Wings" } },
+      "vi" : { "stringUnit" : { "state" : "translated", "value" : "Cánh" } }
+    }},
+    "scale.zone.horns" : { "extractionState" : "manual", "localizations" : {
+      "en" : { "stringUnit" : { "state" : "translated", "value" : "Horns" } },
+      "vi" : { "stringUnit" : { "state" : "translated", "value" : "Sừng rồng" } }
+    }},
+    "scale.zone.body" : { "extractionState" : "manual", "localizations" : {
+      "en" : { "stringUnit" : { "state" : "translated", "value" : "Body" } },
+      "vi" : { "stringUnit" : { "state" : "translated", "value" : "Thân" } }
+    }},
+    "scale.zone.tail" : { "extractionState" : "manual", "localizations" : {
+      "en" : { "stringUnit" : { "state" : "translated", "value" : "Cloud Tail" } },
+      "vi" : { "stringUnit" : { "state" : "translated", "value" : "Đuôi mây" } }
+    }},
+    "scale.tool.solid" : { "extractionState" : "manual", "localizations" : {
+      "en" : { "stringUnit" : { "state" : "translated", "value" : "Brush" } },
+      "vi" : { "stringUnit" : { "state" : "translated", "value" : "Cọ" } }
+    }},
+    "scale.tool.gradient" : { "extractionState" : "manual", "localizations" : {
+      "en" : { "stringUnit" : { "state" : "translated", "value" : "Gradient" } },
+      "vi" : { "stringUnit" : { "state" : "translated", "value" : "Loang" } }
+    }},
+    "scale.tool.rainbow" : { "extractionState" : "manual", "localizations" : {
+      "en" : { "stringUnit" : { "state" : "translated", "value" : "Rainbow" } },
+      "vi" : { "stringUnit" : { "state" : "translated", "value" : "Cầu vồng" } }
+    }},
+    "scale.tool.dots" : { "extractionState" : "manual", "localizations" : {
+      "en" : { "stringUnit" : { "state" : "translated", "value" : "Dots" } },
+      "vi" : { "stringUnit" : { "state" : "translated", "value" : "Chấm bi" } }
+    }},
+    "scale.tool.star" : { "extractionState" : "manual", "localizations" : {
+      "en" : { "stringUnit" : { "state" : "translated", "value" : "Star" } },
+      "vi" : { "stringUnit" : { "state" : "translated", "value" : "Sao" } }
+    }},
+    "scale.tool.cloud" : { "extractionState" : "manual", "localizations" : {
+      "en" : { "stringUnit" : { "state" : "translated", "value" : "Cloud" } },
+      "vi" : { "stringUnit" : { "state" : "translated", "value" : "Mây" } }
+    }},
+    "scale.tool.heart" : { "extractionState" : "manual", "localizations" : {
+      "en" : { "stringUnit" : { "state" : "translated", "value" : "Heart" } },
+      "vi" : { "stringUnit" : { "state" : "translated", "value" : "Tim" } }
+    }},
+    "scale.tool.eraser" : { "extractionState" : "manual", "localizations" : {
+      "en" : { "stringUnit" : { "state" : "translated", "value" : "Eraser" } },
+      "vi" : { "stringUnit" : { "state" : "translated", "value" : "Tẩy" } }
+    }},
+    "scale.undo" : { "extractionState" : "manual", "localizations" : {
+      "en" : { "stringUnit" : { "state" : "translated", "value" : "Undo" } },
+      "vi" : { "stringUnit" : { "state" : "translated", "value" : "Hoàn tác" } }
+    }},
+    "scale.redo" : { "extractionState" : "manual", "localizations" : {
+      "en" : { "stringUnit" : { "state" : "translated", "value" : "Redo" } },
+      "vi" : { "stringUnit" : { "state" : "translated", "value" : "Làm lại" } }
+    }},
+    "scale.clear" : { "extractionState" : "manual", "localizations" : {
+      "en" : { "stringUnit" : { "state" : "translated", "value" : "Reset" } },
+      "vi" : { "stringUnit" : { "state" : "translated", "value" : "Làm lại" } }
+    }},
+    "scale.clear_confirm" : { "extractionState" : "manual", "localizations" : {
+      "en" : { "stringUnit" : { "state" : "translated", "value" : "Clear all drawings on this part and start fresh?" } },
+      "vi" : { "stringUnit" : { "state" : "translated", "value" : "Bé có muốn xóa hết nét vẽ trên bộ phận này không?" } }
+    }},
+    "scale.size" : { "extractionState" : "manual", "localizations" : {
+      "en" : { "stringUnit" : { "state" : "translated", "value" : "Size" } },
+      "vi" : { "stringUnit" : { "state" : "translated", "value" : "Cỡ nét" } }
+    }},
+    "scale.hint" : { "extractionState" : "manual", "localizations" : {
+      "en" : { "stringUnit" : { "state" : "translated", "value" : "Drag to paint!" } },
+      "vi" : { "stringUnit" : { "state" : "translated", "value" : "Kéo tay để tô nhé!" } }
+    }},
+    "wardrobe.cat.hat" : { "extractionState" : "manual", "localizations" : {
+      "en" : { "stringUnit" : { "state" : "translated", "value" : "Hats & Crowns" } },
+      "vi" : { "stringUnit" : { "state" : "translated", "value" : "Mũ & Miện" } }
+    }},
+    "wardrobe.cat.robe" : { "extractionState" : "manual", "localizations" : {
+      "en" : { "stringUnit" : { "state" : "translated", "value" : "Robes" } },
+      "vi" : { "stringUnit" : { "state" : "translated", "value" : "Áo Choàng" } }
+    }},
+    "wardrobe.cat.scarf" : { "extractionState" : "manual", "localizations" : {
+      "en" : { "stringUnit" : { "state" : "translated", "value" : "Scarves & Bows" } },
+      "vi" : { "stringUnit" : { "state" : "translated", "value" : "Nơ & Khăn" } }
+    }},
+    "wardrobe.cat.glasses" : { "extractionState" : "manual", "localizations" : {
+      "en" : { "stringUnit" : { "state" : "translated", "value" : "Glasses" } },
+      "vi" : { "stringUnit" : { "state" : "translated", "value" : "Kính Mắt" } }
+    }},
+    "wardrobe.cat.wingsDeco" : { "extractionState" : "manual", "localizations" : {
+      "en" : { "stringUnit" : { "state" : "translated", "value" : "Fairy Wings" } },
+      "vi" : { "stringUnit" : { "state" : "translated", "value" : "Cánh Tiên" } }
+    }},
+    "wardrobe.none" : { "extractionState" : "manual", "localizations" : {
+      "en" : { "stringUnit" : { "state" : "translated", "value" : "None" } },
+      "vi" : { "stringUnit" : { "state" : "translated", "value" : "Cởi bỏ" } }
+    }},
+    "bath.tool.soap" : { "extractionState" : "manual", "localizations" : {
+      "en" : { "stringUnit" : { "state" : "translated", "value" : "1. Sponge" } },
+      "vi" : { "stringUnit" : { "state" : "translated", "value" : "1. Bông Bọt" } }
+    }},
+    "bath.tool.shower" : { "extractionState" : "manual", "localizations" : {
+      "en" : { "stringUnit" : { "state" : "translated", "value" : "2. Shower" } },
+      "vi" : { "stringUnit" : { "state" : "translated", "value" : "2. Vòi Sen" } }
+    }},
+    "bath.tool.dryer" : { "extractionState" : "manual", "localizations" : {
+      "en" : { "stringUnit" : { "state" : "translated", "value" : "3. Dryer" } },
+      "vi" : { "stringUnit" : { "state" : "translated", "value" : "3. Sấy Mây" } }
+    }},
+    "bath.tool.brush" : { "extractionState" : "manual", "localizations" : {
+      "en" : { "stringUnit" : { "state" : "translated", "value" : "4. Brush" } },
+      "vi" : { "stringUnit" : { "state" : "translated", "value" : "4. Chải Lông" } }
+    }},
+    "bath.hint.soap" : { "extractionState" : "manual", "localizations" : {
+      "en" : { "stringUnit" : { "state" : "translated", "value" : "Drag the cloud sponge to lather fluffy bubbles!" } },
+      "vi" : { "stringUnit" : { "state" : "translated", "value" : "Kéo bông mây để chà bọt xà phòng khắp người rồng!" } }
+    }},
+    "bath.hint.shower" : { "extractionState" : "manual", "localizations" : {
+      "en" : { "stringUnit" : { "state" : "translated", "value" : "Drag the shower head to rinse away bubbles!" } },
+      "vi" : { "stringUnit" : { "state" : "translated", "value" : "Kéo vòi sen để xả sạch hết bong bóng!" } }
+    }},
+    "bath.hint.dryer" : { "extractionState" : "manual", "localizations" : {
+      "en" : { "stringUnit" : { "state" : "translated", "value" : "Drag the warm dryer to fluff up wings & fur!" } },
+      "vi" : { "stringUnit" : { "state" : "translated", "value" : "Kéo máy sấy mây ấm để sấy khô cánh & lông!" } }
+    }},
+    "bath.hint.brush" : { "extractionState" : "manual", "localizations" : {
+      "en" : { "stringUnit" : { "state" : "translated", "value" : "Gently brush to make the baby dragon sparkle!" } },
+      "vi" : { "stringUnit" : { "state" : "translated", "value" : "Chải lông nhẹ nhàng cho bé rồng tỏa sáng lung linh!" } }
+    }},
+    "bake.decorate" : { "extractionState" : "manual", "localizations" : {
+      "en" : { "stringUnit" : { "state" : "translated", "value" : "Decorate" } },
+      "vi" : { "stringUnit" : { "state" : "translated", "value" : "Trang Trí Bánh" } }
+    }},
+    "bake.feed" : { "extractionState" : "manual", "localizations" : {
+      "en" : { "stringUnit" : { "state" : "translated", "value" : "Feed Dragon" } },
+      "vi" : { "stringUnit" : { "state" : "translated", "value" : "Cho Rồng Ăn" } }
+    }},
+    "bake.shape.cloud" : { "extractionState" : "manual", "localizations" : {
+      "en" : { "stringUnit" : { "state" : "translated", "value" : "Cloud" } },
+      "vi" : { "stringUnit" : { "state" : "translated", "value" : "Mây" } }
+    }},
+    "bake.shape.star" : { "extractionState" : "manual", "localizations" : {
+      "en" : { "stringUnit" : { "state" : "translated", "value" : "Star" } },
+      "vi" : { "stringUnit" : { "state" : "translated", "value" : "Sao" } }
+    }},
+    "bake.shape.moon" : { "extractionState" : "manual", "localizations" : {
+      "en" : { "stringUnit" : { "state" : "translated", "value" : "Moon" } },
+      "vi" : { "stringUnit" : { "state" : "translated", "value" : "Trăng" } }
+    }},
+    "bake.shape.heart" : { "extractionState" : "manual", "localizations" : {
+      "en" : { "stringUnit" : { "state" : "translated", "value" : "Heart" } },
+      "vi" : { "stringUnit" : { "state" : "translated", "value" : "Tim" } }
+    }},
+    "bake.shape.flower" : { "extractionState" : "manual", "localizations" : {
+      "en" : { "stringUnit" : { "state" : "translated", "value" : "Flower" } },
+      "vi" : { "stringUnit" : { "state" : "translated", "value" : "Hoa" } }
+    }},
+    "bake.icing" : { "extractionState" : "manual", "localizations" : {
+      "en" : { "stringUnit" : { "state" : "translated", "value" : "Icing:" } },
+      "vi" : { "stringUnit" : { "state" : "translated", "value" : "Kem phủ:" } }
+    }},
+    "bake.bake_btn" : { "extractionState" : "manual", "localizations" : {
+      "en" : { "stringUnit" : { "state" : "translated", "value" : "Bake in Oven" } },
+      "vi" : { "stringUnit" : { "state" : "translated", "value" : "Nướng Bánh Lò Mây" } }
+    }},
+    "bake.baking_now" : { "extractionState" : "manual", "localizations" : {
+      "en" : { "stringUnit" : { "state" : "translated", "value" : "Baking sweet treats..." } },
+      "vi" : { "stringUnit" : { "state" : "translated", "value" : "Đang nướng thơm lừng..." } }
+    }},
+    "bake.baked_fresh" : { "extractionState" : "manual", "localizations" : {
+      "en" : { "stringUnit" : { "state" : "translated", "value" : "Baked Fresh ✨" } },
+      "vi" : { "stringUnit" : { "state" : "translated", "value" : "Đã Nướng Xong ✨" } }
+    }},
+    "bake.tap_to_feed" : { "extractionState" : "manual", "localizations" : {
+      "en" : { "stringUnit" : { "state" : "translated", "value" : "Tap Treat to Feed Bites" } },
+      "vi" : { "stringUnit" : { "state" : "translated", "value" : "Chạm Bánh Để Cho Rồng Cắn" } }
+    }},
+    "bake.full_dragon" : { "extractionState" : "manual", "localizations" : {
+      "en" : { "stringUnit" : { "state" : "translated", "value" : "Full Dragon! Bake More" } },
+      "vi" : { "stringUnit" : { "state" : "translated", "value" : "Bé Rồng No Nê! Nướng Thêm" } }
+    }},
+    "pet.type.rabbit" : { "extractionState" : "manual", "localizations" : {
+      "en" : { "stringUnit" : { "state" : "translated", "value" : "Bunny" } },
+      "vi" : { "stringUnit" : { "state" : "translated", "value" : "Thỏ Bông" } }
+    }},
+    "pet.type.fox" : { "extractionState" : "manual", "localizations" : {
+      "en" : { "stringUnit" : { "state" : "translated", "value" : "Cloud Fox" } },
+      "vi" : { "stringUnit" : { "state" : "translated", "value" : "Cáo Mây" } }
+    }},
+    "pet.type.kitten" : { "extractionState" : "manual", "localizations" : {
+      "en" : { "stringUnit" : { "state" : "translated", "value" : "Butter Cat" } },
+      "vi" : { "stringUnit" : { "state" : "translated", "value" : "Mèo Kem" } }
+    }},
+    "pet.act.petting" : { "extractionState" : "manual", "localizations" : {
+      "en" : { "stringUnit" : { "state" : "translated", "value" : "Pet" } },
+      "vi" : { "stringUnit" : { "state" : "translated", "value" : "Xoa Đầu" } }
+    }},
+    "pet.act.feeding" : { "extractionState" : "manual", "localizations" : {
+      "en" : { "stringUnit" : { "state" : "translated", "value" : "Feed" } },
+      "vi" : { "stringUnit" : { "state" : "translated", "value" : "Cho Ăn" } }
+    }},
+    "pet.act.brushing" : { "extractionState" : "manual", "localizations" : {
+      "en" : { "stringUnit" : { "state" : "translated", "value" : "Brush" } },
+      "vi" : { "stringUnit" : { "state" : "translated", "value" : "Chải Lông" } }
+    }},
+    "pet.act.playing" : { "extractionState" : "manual", "localizations" : {
+      "en" : { "stringUnit" : { "state" : "translated", "value" : "Play Ball" } },
+      "vi" : { "stringUnit" : { "state" : "translated", "value" : "Chơi Bóng" } }
+    }},
+    "photo.pose.sit" : { "extractionState" : "manual", "localizations" : {
+      "en" : { "stringUnit" : { "state" : "translated", "value" : "Sit" } },
+      "vi" : { "stringUnit" : { "state" : "translated", "value" : "Ngồi" } }
+    }},
+    "photo.pose.wave" : { "extractionState" : "manual", "localizations" : {
+      "en" : { "stringUnit" : { "state" : "translated", "value" : "Wave" } },
+      "vi" : { "stringUnit" : { "state" : "translated", "value" : "Chào" } }
+    }},
+    "photo.snap" : { "extractionState" : "manual", "localizations" : {
+      "en" : { "stringUnit" : { "state" : "translated", "value" : "Snap Photo!" } },
+      "vi" : { "stringUnit" : { "state" : "translated", "value" : "Chụp Ảnh!" } }
+    }},
+    "photo.clear_stickers" : { "extractionState" : "manual", "localizations" : {
+      "en" : { "stringUnit" : { "state" : "translated", "value" : "Clear Stickers" } },
+      "vi" : { "stringUnit" : { "state" : "translated", "value" : "Bỏ Nhãn Dán" } }
+    }},
+    "photo.saved_toast" : { "extractionState" : "manual", "localizations" : {
+      "en" : { "stringUnit" : { "state" : "translated", "value" : "Saved photo to Photo Album!" } },
+      "vi" : { "stringUnit" : { "state" : "translated", "value" : "Đã lưu ảnh kỷ niệm vào Album!" } }
+    }},
+    "photo.exported_toast" : { "extractionState" : "manual", "localizations" : {
+      "en" : { "stringUnit" : { "state" : "translated", "value" : "Exported to Apple Photos!" } },
+      "vi" : { "stringUnit" : { "state" : "translated", "value" : "Đã lưu vào Thư viện Ảnh!" } }
+    }},
+    "photo.export_denied" : { "extractionState" : "manual", "localizations" : {
+      "en" : { "stringUnit" : { "state" : "translated", "value" : "Please allow Photos add-only access in Settings." } },
+      "vi" : { "stringUnit" : { "state" : "translated", "value" : "Vui lòng cấp quyền Thêm Ảnh trong Cài đặt." } }
+    }},
+    "photo.album_title" : { "extractionState" : "manual", "localizations" : {
+      "en" : { "stringUnit" : { "state" : "translated", "value" : "Photo Album" } },
+      "vi" : { "stringUnit" : { "state" : "translated", "value" : "Album Kỷ Niệm" } }
+    }},
+    "photo.album_empty" : { "extractionState" : "manual", "localizations" : {
+      "en" : { "stringUnit" : { "state" : "translated", "value" : "No photos yet! Tap Snap Photo to save memories." } },
+      "vi" : { "stringUnit" : { "state" : "translated", "value" : "Chưa có ảnh! Bấm Chụp Ảnh để lưu khoảnh khắc nhé." } }
+    }},
+    "photo.export" : { "extractionState" : "manual", "localizations" : {
+      "en" : { "stringUnit" : { "state" : "translated", "value" : "Export to Photos" } },
+      "vi" : { "stringUnit" : { "state" : "translated", "value" : "Lưu vào Ảnh" } }
+    }},
+    "slots.subtitle" : { "extractionState" : "manual", "localizations" : {
+      "en" : { "stringUnit" : { "state" : "translated", "value" : "Choose Dragon Slot (12 Slots)" } },
+      "vi" : { "stringUnit" : { "state" : "translated", "value" : "Chọn Slot Nhân Vật Rồng (12 Ô)" } }
+    }},
+    "stickers.subtitle" : { "extractionState" : "manual", "localizations" : {
+      "en" : { "stringUnit" : { "state" : "translated", "value" : "Collect cute stickers by playing — always free!" } },
+      "vi" : { "stringUnit" : { "state" : "translated", "value" : "Chơi các góc sáng tạo để nhận sticker miễn phí!" } }
+    }},
+    "wish.msg.0" : { "extractionState" : "manual", "localizations" : {
+      "en" : { "stringUnit" : { "state" : "translated", "value" : "Cloudy Baby: \"Today I want to attend a moonlit cloud party!\"" } },
+      "vi" : { "stringUnit" : { "state" : "translated", "value" : "Bé Rồng Mây: \"Hôm nay mình muốn dự tiệc dạ hội dưới ánh trăng rằm!\"" } }
+    }},
+    "wish.msg.1" : { "extractionState" : "manual", "localizations" : {
+      "en" : { "stringUnit" : { "state" : "translated", "value" : "Cloudy Baby: \"I wish for shiny jade scales sparkling like morning dew!\"" } },
+      "vi" : { "stringUnit" : { "state" : "translated", "value" : "Bé Rồng Mây: \"Mình ước có một bộ vảy ngọc bích lấp lánh như sương sớm!\"" } }
+    }},
+    "wish.msg.2" : { "extractionState" : "manual", "localizations" : {
+      "en" : { "stringUnit" : { "state" : "translated", "value" : "Cloudy Baby: \"Today I am craving a sweet crispy star cookie!\"" } },
+      "vi" : { "stringUnit" : { "state" : "translated", "value" : "Bé Rồng Mây: \"Hôm nay mình rất thèm một chiếc bánh cookie mây giòn rụm!\"" } }
+    }},
+    "wish.msg.3" : { "extractionState" : "manual", "localizations" : {
+      "en" : { "stringUnit" : { "state" : "translated", "value" : "Cloudy Baby: \"I want a warm fluffy bubble bath and rainbow rinse!\"" } },
+      "vi" : { "stringUnit" : { "state" : "translated", "value" : "Bé Rồng Mây: \"Mình muốn được tắm bọt mây thơm ngát và xả nước mát lành!\"" } }
+    }},
+    "wish.msg.4" : { "extractionState" : "manual", "localizations" : {
+      "en" : { "stringUnit" : { "state" : "translated", "value" : "Cloudy Baby: \"I want to try on a cute peach ribbon bow!\"" } },
+      "vi" : { "stringUnit" : { "state" : "translated", "value" : "Bé Rồng Mây: \"Mình muốn thử đeo một chiếc nơ cổ màu đào thật xinh xắn!\"" } }
+    }},
+    "wish.msg.5" : { "extractionState" : "manual", "localizations" : {
+      "en" : { "stringUnit" : { "state" : "translated", "value" : "Cloudy Baby: \"I want to snap a sweet memory photo with Bunny!\"" } },
+      "vi" : { "stringUnit" : { "state" : "translated", "value" : "Bé Rồng Mây: \"Mình muốn rủ các bạn Thỏ Bông chụp một bức ảnh kỷ niệm!\"" } }
+    }},
+    "wish.msg.6" : { "extractionState" : "manual", "localizations" : {
+      "en" : { "stringUnit" : { "state" : "translated", "value" : "Cloudy Baby: \"I want to wear a golden sparkling star crown!\"" } },
+      "vi" : { "stringUnit" : { "state" : "translated", "value" : "Bé Rồng Mây: \"Mình muốn đội một chiếc vương miện sao vàng lấp lánh!\"" } }
+    }},
+    "wish.no_grading_note" : { "extractionState" : "manual", "localizations" : {
+      "en" : { "stringUnit" : { "state" : "translated", "value" : "Visit Scale Studio, Wardrobe, or Bake Nook — there is no wrong way to create!" } },
+      "vi" : { "stringUnit" : { "state" : "translated", "value" : "Bé hãy trang trí theo ý thích nhé! Không có đúng hay sai đâu!" } }
+    }},
+    "wish.accept_btn" : { "extractionState" : "manual", "localizations" : {
+      "en" : { "stringUnit" : { "state" : "translated", "value" : "Let's Go! ✨" } },
+      "vi" : { "stringUnit" : { "state" : "translated", "value" : "Mình Làm Liền! ✨" } }
+    }},
+    "wish.done_btn" : { "extractionState" : "manual", "localizations" : {
+      "en" : { "stringUnit" : { "state" : "translated", "value" : "Wish Cheer Sent! ✨" } },
+      "vi" : { "stringUnit" : { "state" : "translated", "value" : "Đã Nhận Sticker Điều Ước! ✨" } }
+    }},
+    "gate.title" : { "extractionState" : "manual", "localizations" : {
+      "en" : { "stringUnit" : { "state" : "translated", "value" : "Parents Only" } },
+      "vi" : { "stringUnit" : { "state" : "translated", "value" : "Khu Vực Bố Mẹ" } }
+    }},
+    "gate.prompt" : { "extractionState" : "manual", "localizations" : {
+      "en" : { "stringUnit" : { "state" : "translated", "value" : "Grown-ups only: solve the math problem or press and hold for 3 seconds." } },
+      "vi" : { "stringUnit" : { "state" : "translated", "value" : "Chỉ dành cho người lớn: giải phép tính hoặc nhấn giữ nút 3 giây." } }
+    }},
+    "gate.verify" : { "extractionState" : "manual", "localizations" : {
+      "en" : { "stringUnit" : { "state" : "translated", "value" : "Enter" } },
+      "vi" : { "stringUnit" : { "state" : "translated", "value" : "Xác nhận" } }
+    }},
+    "gate.wrong" : { "extractionState" : "manual", "localizations" : {
+      "en" : { "stringUnit" : { "state" : "translated", "value" : "Not quite — please try the new question!" } },
+      "vi" : { "stringUnit" : { "state" : "translated", "value" : "Chưa đúng, bố mẹ thử phép tính mới nhé!" } }
+    }},
+    "gate.hold" : { "extractionState" : "manual", "localizations" : {
+      "en" : { "stringUnit" : { "state" : "translated", "value" : "Hold for 3s to enter" } },
+      "vi" : { "stringUnit" : { "state" : "translated", "value" : "Giữ nút 3 giây để mở" } }
+    }},
+    "premium.title" : { "extractionState" : "manual", "localizations" : {
+      "en" : { "stringUnit" : { "state" : "translated", "value" : "Cloud Dragon Premium" } },
+      "vi" : { "stringUnit" : { "state" : "translated", "value" : "Gói Cao Cấp Rồng Mây" } }
+    }},
+    "premium.desc" : { "extractionState" : "manual", "localizations" : {
+      "en" : { "stringUnit" : { "state" : "translated", "value" : "One-time purchase to unlock all special outfits and remove transitions." } },
+      "vi" : { "stringUnit" : { "state" : "translated", "value" : "Mở khóa toàn bộ trang phục đặc biệt và tắt quảng cáo chuyển cảnh." } }
+    }},
+    "premium.buy_button" : { "extractionState" : "manual", "localizations" : {
+      "en" : { "stringUnit" : { "state" : "translated", "value" : "Unlock Premium" } },
+      "vi" : { "stringUnit" : { "state" : "translated", "value" : "Mở Khóa Premium" } }
+    }},
+    "premium.reward_unlock" : { "extractionState" : "manual", "localizations" : {
+      "en" : { "stringUnit" : { "state" : "translated", "value" : "Try Decorative Extra (Free)" } },
+      "vi" : { "stringUnit" : { "state" : "translated", "value" : "Nhận Thử Đồ Trang Trí (Miễn Phí)" } }
+    }},
+    "premium.active" : { "extractionState" : "manual", "localizations" : {
+      "en" : { "stringUnit" : { "state" : "translated", "value" : "Unlocked" } },
+      "vi" : { "stringUnit" : { "state" : "translated", "value" : "Đã mở" } }
+    }},
+    "settings.language" : { "extractionState" : "manual", "localizations" : {
+      "en" : { "stringUnit" : { "state" : "translated", "value" : "Language" } },
+      "vi" : { "stringUnit" : { "state" : "translated", "value" : "Ngôn ngữ" } }
+    }},
+    "settings.reduce_motion" : { "extractionState" : "manual", "localizations" : {
+      "en" : { "stringUnit" : { "state" : "translated", "value" : "Reduce Motion" } },
+      "vi" : { "stringUnit" : { "state" : "translated", "value" : "Giảm chuyển động" } }
+    }},
+    "settings.music" : { "extractionState" : "manual", "localizations" : {
+      "en" : { "stringUnit" : { "state" : "translated", "value" : "Background Music" } },
+      "vi" : { "stringUnit" : { "state" : "translated", "value" : "Nhạc nền êm dịu" } }
+    }},
+    "settings.sfx" : { "extractionState" : "manual", "localizations" : {
+      "en" : { "stringUnit" : { "state" : "translated", "value" : "Sound Effects" } },
+      "vi" : { "stringUnit" : { "state" : "translated", "value" : "Âm thanh hiệu ứng" } }
+    }},
+    "settings.restore" : { "extractionState" : "manual", "localizations" : {
+      "en" : { "stringUnit" : { "state" : "translated", "value" : "Restore Purchases" } },
+      "vi" : { "stringUnit" : { "state" : "translated", "value" : "Khôi phục mua hàng" } }
+    }},
+    "settings.privacy" : { "extractionState" : "manual", "localizations" : {
+      "en" : { "stringUnit" : { "state" : "translated", "value" : "Kids Privacy Policy" } },
+      "vi" : { "stringUnit" : { "state" : "translated", "value" : "Chính sách bảo vệ trẻ em" } }
+    }},
+    "settings.rate_app" : { "extractionState" : "manual", "localizations" : {
+      "en" : { "stringUnit" : { "state" : "translated", "value" : "Rate App" } },
+      "vi" : { "stringUnit" : { "state" : "translated", "value" : "Đánh giá ứng dụng" } }
+    }},
+    "settings.about" : { "extractionState" : "manual", "localizations" : {
+      "en" : { "stringUnit" : { "state" : "translated", "value" : "Cloud Dragon Studio v1.0 • Built natively with SwiftUI for ages 4–9." } },
+      "vi" : { "stringUnit" : { "state" : "translated", "value" : "Cloud Dragon Studio v1.0 • Phiên bản SwiftUI thuần cho bé 4–9 tuổi." } }
+    }},
+    "privacy.body" : { "extractionState" : "manual", "localizations" : {
+      "en" : { "stringUnit" : { "state" : "translated", "value" : "Cloud Dragon Studio follows Apple Kids Category (5.1.4) and COPPA guidelines:\n\n• Zero tracking, zero IDFA, zero third-party ad SDKs.\n• No personal data or behavioral analytics are collected or transmitted off-device.\n• Save slots and photos remain strictly on your device.\n• Optional Apple Photos export uses add-only permission.\n• Purchases and external prompts are protected behind a Parental Gate." } },
+      "vi" : { "stringUnit" : { "state" : "translated", "value" : "Cloud Dragon Studio tuân thủ quy chuẩn Apple Kids Category (5.1.4) và COPPA:\n\n• Không theo dõi (no tracking), không IDFA, không SDK quảng cáo bên thứ ba.\n• Không thu thập hay gửi dữ liệu cá nhân ra ngoài thiết bị.\n• Các ô lưu rồng và ảnh kỷ niệm chỉ lưu cục bộ trên máy.\n• Lưu ảnh sang Thư viện Apple chỉ xin quyền ghi thêm (add-only).\n• Mọi giao dịch mua và mục dành cho phụ huynh đều qua Cổng Bố Mẹ." } }
+    }}
   },
   "version" : "1.0"
 }

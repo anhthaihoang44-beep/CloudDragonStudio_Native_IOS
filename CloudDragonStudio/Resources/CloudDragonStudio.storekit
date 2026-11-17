@@ -1,0 +1,43 @@
+{
+  "identifier" : "A1B2C3D4-E5F6-4789-9012-ABCDEF123456",
+  "nonRenewingSubscriptions" : [
+
+  ],
+  "products" : [
+    {
+      "displayPrice" : "2.99",
+      "familyShareable" : true,
+      "internalID" : "65001001",
+      "localizations" : [
+        {
+          "description" : "Unlock all decorative wardrobe treasures and remove transitions.",
+          "displayName" : "Cloud Dragon Premium",
+          "locale" : "en_US"
+        },
+        {
+          "description" : "Mở khóa toàn bộ trang phục đặc biệt và tắt quảng cáo chuyển cảnh.",
+          "displayName" : "Gói Cao Cấp Rồng Mây",
+          "locale" : "vi"
+        }
+      ],
+      "productID" : "com.clouddragonstudio.app.premium",
+      "referenceName" : "Cloud Dragon Premium",
+      "type" : "NonConsumable"
+    }
+  ],
+  "settings" : {
+    "_failTransactionsEnabled" : false,
+    "_locale" : "en_US",
+    "_storefront" : "USA",
+    "_storeKitErrors" : [
+
+    ]
+  },
+  "subscriptionGroups" : [
+
+  ],
+  "version" : {
+    "major" : 3,
+    "minor" : 0
+  }
+}

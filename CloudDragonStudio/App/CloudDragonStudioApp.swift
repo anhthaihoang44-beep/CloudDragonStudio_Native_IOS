@@ -11,6 +11,14 @@ struct CloudDragonStudioApp: App {
                 .environmentObject(container.router)
                 .environmentObject(container.localization)
                 .environmentObject(container.haptics)
+                .environmentObject(container.audio)
+                .environmentObject(container.purchases)
+                .task {
+                    await container.purchases.loadProducts()
+                    if container.purchases.isPremiumPurchased && !container.saveData.isPremiumUnlocked {
+                        container.unlockPremiumLocally()
+                    }
+                }
         }
     }
 }
