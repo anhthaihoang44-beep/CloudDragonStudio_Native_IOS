@@ -10,11 +10,15 @@ on:
 permissions:
   contents: write
 
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
 jobs:
-  build-test-package:
-    name: Build, Simulator Tests & Sideloadly IPA
+  test-iphone:
+    name: Test & Screenshot (iPhone)
     runs-on: macos-15
-    timeout-minutes: 45
+    timeout-minutes: 30
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v4
@@ -24,74 +28,125 @@ jobs:
           if ! command -v xcodegen >/dev/null 2>&1; then
             brew install xcodegen
           fi
-          xcodebuild -version
 
       - name: Generate Xcode Project
         run: xcodegen generate
 
-      - name: Discover Available iPhone & iPad Simulators
-        id: sims
+      - name: Pick iPhone Simulator
+        id: sim
         run: |
           python3 - << 'PY'
           import json, subprocess, os
-          raw = subprocess.check_output(["xcrun", "simctl", "list", "devices", "available", "-j"], text=True)
-          data = json.loads(raw)
-          iphone = None
-          ipad = None
+          data = json.loads(subprocess.check_output(["xcrun", "simctl", "list", "devices", "available", "-j"], text=True))
           for runtime, devs in sorted(data.get("devices", {}).items(), reverse=True):
               if "iOS" not in runtime:
                   continue
               for d in devs:
-                  if not d.get("isAvailable"):
-                      continue
-                  name = d.get("name", "")
-                  if iphone is None and "iPhone" in name:
-                      iphone = (d["udid"], name, runtime)
-                  if ipad is None and "iPad" in name:
-                      ipad = (d["udid"], name, runtime)
-          assert iphone and ipad, f"Missing simulators: iphone={iphone}, ipad={ipad}"
-          print("Selected iPhone:", iphone)
-          print("Selected iPad:", ipad)
-          with open(os.environ["GITHUB_OUTPUT"], "a") as f:
-              f.write(f"iphone_udid={iphone[0]}\n")
-              f.write(f"ipad_udid={ipad[0]}\n")
+                  if d.get("isAvailable") and "iPhone" in d.get("name", ""):
+                      print("Selected iPhone:", d["name"], d["udid"], runtime)
+                      with open(os.environ["GITHUB_OUTPUT"], "a") as f:
+                          f.write(f"udid={d['udid']}\n")
+                      raise SystemExit(0)
+          raise SystemExit("No available iPhone simulator")
           PY
 
-      - name: Run Unit & UI Tests on iPhone Simulator
+      - name: Run Unit & UI Tests on iPhone
         run: |
           rm -rf build/iPhone.xcresult
           xcodebuild test \
             -project CloudDragonStudio.xcodeproj \
             -scheme CloudDragonStudio \
-            -destination "id=${{ steps.sims.outputs.iphone_udid }}" \
+            -destination "id=${{ steps.sim.outputs.udid }}" \
             -resultBundlePath build/iPhone.xcresult \
             CODE_SIGN_IDENTITY="" \
             CODE_SIGNING_REQUIRED=NO
 
-      - name: Run Unit & UI Tests on iPad Simulator
+      - name: Extract iPhone Screenshots
+        if: always()
+        run: python3 scripts/extract_xcresult_screenshots.py build/iPhone.xcresult ci_screenshots/iphone
+
+      - name: Upload iPhone Screenshots
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: screenshots-iphone-${{ github.run_number }}
+          path: ci_screenshots/iphone
+          retention-days: 14
+
+  test-ipad:
+    name: Test & Screenshot (iPad)
+    runs-on: macos-15
+    timeout-minutes: 30
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Install XcodeGen
+        run: |
+          if ! command -v xcodegen >/dev/null 2>&1; then
+            brew install xcodegen
+          fi
+
+      - name: Generate Xcode Project
+        run: xcodegen generate
+
+      - name: Pick iPad Simulator
+        id: sim
+        run: |
+          python3 - << 'PY'
+          import json, subprocess, os
+          data = json.loads(subprocess.check_output(["xcrun", "simctl", "list", "devices", "available", "-j"], text=True))
+          for runtime, devs in sorted(data.get("devices", {}).items(), reverse=True):
+              if "iOS" not in runtime:
+                  continue
+              for d in devs:
+                  if d.get("isAvailable") and "iPad" in d.get("name", ""):
+                      print("Selected iPad:", d["name"], d["udid"], runtime)
+                      with open(os.environ["GITHUB_OUTPUT"], "a") as f:
+                          f.write(f"udid={d['udid']}\n")
+                      raise SystemExit(0)
+          raise SystemExit("No available iPad simulator")
+          PY
+
+      - name: Run Unit & UI Tests on iPad
         run: |
           rm -rf build/iPad.xcresult
           xcodebuild test \
             -project CloudDragonStudio.xcodeproj \
             -scheme CloudDragonStudio \
-            -destination "id=${{ steps.sims.outputs.ipad_udid }}" \
+            -destination "id=${{ steps.sim.outputs.udid }}" \
             -resultBundlePath build/iPad.xcresult \
             CODE_SIGN_IDENTITY="" \
             CODE_SIGNING_REQUIRED=NO
 
-      - name: Extract Simulator Screenshots
+      - name: Extract iPad Screenshots
         if: always()
-        run: |
-          python3 scripts/extract_xcresult_screenshots.py build/iPhone.xcresult ci_screenshots/iphone
-          python3 scripts/extract_xcresult_screenshots.py build/iPad.xcresult ci_screenshots/ipad
+        run: python3 scripts/extract_xcresult_screenshots.py build/iPad.xcresult ci_screenshots/ipad
 
-      - name: Upload Simulator Screenshots Artifact
+      - name: Upload iPad Screenshots
         if: always()
         uses: actions/upload-artifact@v4
         with:
-          name: simulator-screenshots-${{ github.run_number }}
-          path: ci_screenshots
+          name: screenshots-ipad-${{ github.run_number }}
+          path: ci_screenshots/ipad
           retention-days: 14
+
+  build-ipa:
+    name: Archive & Package Sideloadly IPA
+    runs-on: macos-15
+    timeout-minutes: 30
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Install XcodeGen
+        run: |
+          if ! command -v xcodegen >/dev/null 2>&1; then
+            brew install xcodegen
+          fi
+
+      - name: Generate Xcode Project
+        run: xcodegen generate
 
       - name: Archive Release (No Codesign)
         run: |
