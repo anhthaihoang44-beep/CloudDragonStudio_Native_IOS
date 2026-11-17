@@ -1,0 +1,142 @@
+name: Build & Verify Cloud Dragon Studio (Native iOS)
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build-test-package:
+    name: Build, Simulator Tests & Sideloadly IPA
+    runs-on: macos-15
+    timeout-minutes: 45
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Install XcodeGen
+        run: |
+          if ! command -v xcodegen >/dev/null 2>&1; then
+            brew install xcodegen
+          fi
+          xcodebuild -version
+
+      - name: Generate Xcode Project
+        run: xcodegen generate
+
+      - name: Discover Available iPhone & iPad Simulators
+        id: sims
+        run: |
+          python3 - << 'PY'
+          import json, subprocess, os
+          raw = subprocess.check_output(["xcrun", "simctl", "list", "devices", "available", "-j"], text=True)
+          data = json.loads(raw)
+          iphone = None
+          ipad = None
+          for runtime, devs in sorted(data.get("devices", {}).items(), reverse=True):
+              if "iOS" not in runtime:
+                  continue
+              for d in devs:
+                  if not d.get("isAvailable"):
+                      continue
+                  name = d.get("name", "")
+                  if iphone is None and "iPhone" in name:
+                      iphone = (d["udid"], name, runtime)
+                  if ipad is None and "iPad" in name:
+                      ipad = (d["udid"], name, runtime)
+          assert iphone and ipad, f"Missing simulators: iphone={iphone}, ipad={ipad}"
+          print("Selected iPhone:", iphone)
+          print("Selected iPad:", ipad)
+          with open(os.environ["GITHUB_OUTPUT"], "a") as f:
+              f.write(f"iphone_udid={iphone[0]}\n")
+              f.write(f"ipad_udid={ipad[0]}\n")
+          PY
+
+      - name: Run Unit & UI Tests on iPhone Simulator
+        run: |
+          rm -rf build/iPhone.xcresult
+          xcodebuild test \
+            -project CloudDragonStudio.xcodeproj \
+            -scheme CloudDragonStudio \
+            -destination "id=${{ steps.sims.outputs.iphone_udid }}" \
+            -resultBundlePath build/iPhone.xcresult \
+            CODE_SIGN_IDENTITY="" \
+            CODE_SIGNING_REQUIRED=NO
+
+      - name: Run Unit & UI Tests on iPad Simulator
+        run: |
+          rm -rf build/iPad.xcresult
+          xcodebuild test \
+            -project CloudDragonStudio.xcodeproj \
+            -scheme CloudDragonStudio \
+            -destination "id=${{ steps.sims.outputs.ipad_udid }}" \
+            -resultBundlePath build/iPad.xcresult \
+            CODE_SIGN_IDENTITY="" \
+            CODE_SIGNING_REQUIRED=NO
+
+      - name: Extract Simulator Screenshots
+        if: always()
+        run: |
+          python3 scripts/extract_xcresult_screenshots.py build/iPhone.xcresult ci_screenshots/iphone
+          python3 scripts/extract_xcresult_screenshots.py build/iPad.xcresult ci_screenshots/ipad
+
+      - name: Upload Simulator Screenshots Artifact
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: simulator-screenshots-${{ github.run_number }}
+          path: ci_screenshots
+          retention-days: 14
+
+      - name: Archive Release (No Codesign)
+        run: |
+          xcodebuild archive \
+            -project CloudDragonStudio.xcodeproj \
+            -scheme CloudDragonStudio \
+            -configuration Release \
+            -destination 'generic/platform=iOS' \
+            -archivePath build/CloudDragonStudio.xcarchive \
+            CODE_SIGN_IDENTITY="" \
+            CODE_SIGNING_REQUIRED=NO \
+            CODE_SIGNING_ALLOWED=NO
+
+      - name: Package Sideloadly IPA
+        run: |
+          APP_PATH=$(find build/CloudDragonStudio.xcarchive/Products/Applications -name "*.app" -type d | head -1)
+          test -n "$APP_PATH"
+          rm -rf build/Payload build/CloudDragonStudio.ipa
+          mkdir -p build/Payload
+          cp -R "$APP_PATH" build/Payload/
+          cd build
+          zip -qr -9 CloudDragonStudio.ipa Payload
+          cd ..
+          ls -lh build/CloudDragonStudio.ipa
+
+      - name: Upload IPA Artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: CloudDragonStudio-Native-iOS-IPA
+          path: build/CloudDragonStudio.ipa
+          retention-days: 30
+
+      - name: Publish GitHub Release
+        if: github.event_name == 'push'
+        continue-on-error: true
+        run: |
+          if ! gh release view v1.0.0 >/dev/null 2>&1; then
+            gh release create v1.0.0 build/CloudDragonStudio.ipa \
+              --title "Cloud Dragon Studio Native iOS v1.0.0" \
+              --notes "Native SwiftUI iOS IPA (iPhone + iPad Universal, iOS 16.0+) ready for Sideloadly." || gh release upload v1.0.0 build/CloudDragonStudio.ipa --clobber
+          else
+            gh release edit v1.0.0 \
+              --title "Cloud Dragon Studio Native iOS v1.0.0" \
+              --notes "Native SwiftUI iOS IPA (iPhone + iPad Universal, iOS 16.0+) ready for Sideloadly." || true
+            gh release upload v1.0.0 build/CloudDragonStudio.ipa --clobber
+          fi
+        env:
+          GH_TOKEN: ${{ github.token }}

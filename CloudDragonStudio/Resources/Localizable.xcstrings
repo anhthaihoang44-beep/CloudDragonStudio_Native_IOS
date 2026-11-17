@@ -1,0 +1,181 @@
+{
+  "sourceLanguage" : "en",
+  "strings" : {
+    "app.title" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Cloud Dragon Studio" } },
+        "vi" : { "stringUnit" : { "state" : "translated", "value" : "Xưởng Rồng Mây" } }
+      }
+    },
+    "app.subtitle" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "A cozy sky town for styling baby dragons" } },
+        "vi" : { "stringUnit" : { "state" : "translated", "value" : "Thị trấn trên mây dịu êm cho bé rồng" } }
+      }
+    },
+    "nav.home" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Home" } },
+        "vi" : { "stringUnit" : { "state" : "translated", "value" : "Trang chủ" } }
+      }
+    },
+    "nav.back" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Back" } },
+        "vi" : { "stringUnit" : { "state" : "translated", "value" : "Quay lại" } }
+      }
+    },
+    "area.bath" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Cloud Bath" } },
+        "vi" : { "stringUnit" : { "state" : "translated", "value" : "Tắm Mây" } }
+      }
+    },
+    "area.bath.desc" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Bubbly foam scrub & gentle rinse" } },
+        "vi" : { "stringUnit" : { "state" : "translated", "value" : "Xoa bọt mây và xả nước dịu nhẹ" } }
+      }
+    },
+    "area.scale" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Scale Studio" } },
+        "vi" : { "stringUnit" : { "state" : "translated", "value" : "Xưởng Vảy" } }
+      }
+    },
+    "area.scale.desc" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Paint colors, patterns & stamps" } },
+        "vi" : { "stringUnit" : { "state" : "translated", "value" : "Tô màu, họa tiết và tem xinh" } }
+      }
+    },
+    "area.wardrobe" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Wardrobe" } },
+        "vi" : { "stringUnit" : { "state" : "translated", "value" : "Tủ Đồ" } }
+      }
+    },
+    "area.wardrobe.desc" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Recolorable hats, scarves & wings" } },
+        "vi" : { "stringUnit" : { "state" : "translated", "value" : "Mũ, khăn, cánh và trang phục đổi màu" } }
+      }
+    },
+    "area.bake" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Bake Nook" } },
+        "vi" : { "stringUnit" : { "state" : "translated", "value" : "Góc Bánh" } }
+      }
+    },
+    "area.bake.desc" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Bake & decorate star treats" } },
+        "vi" : { "stringUnit" : { "state" : "translated", "value" : "Nướng và trang trí bánh sao mây" } }
+      }
+    },
+    "area.pets" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Pet Garden" } },
+        "vi" : { "stringUnit" : { "state" : "translated", "value" : "Vườn Thú" } }
+      }
+    },
+    "area.pets.desc" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Care & play with tiny sky pets" } },
+        "vi" : { "stringUnit" : { "state" : "translated", "value" : "Chăm sóc và chơi cùng bạn thú nhỏ" } }
+      }
+    },
+    "area.photo" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Photo Booth" } },
+        "vi" : { "stringUnit" : { "state" : "translated", "value" : "Góc Chụp Ảnh" } }
+      }
+    },
+    "area.photo.desc" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Poses, backdrops & cloud album" } },
+        "vi" : { "stringUnit" : { "state" : "translated", "value" : "Chọn phông mây và lưu ảnh kỷ niệm" } }
+      }
+    },
+    "mode.free_studio" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Save Slots" } },
+        "vi" : { "stringUnit" : { "state" : "translated", "value" : "Ô Lưu" } }
+      }
+    },
+    "mode.daily_wish" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Daily Wish" } },
+        "vi" : { "stringUnit" : { "state" : "translated", "value" : "Điều Ước" } }
+      }
+    },
+    "mode.sticker_book" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Stickers" } },
+        "vi" : { "stringUnit" : { "state" : "translated", "value" : "Nhãn Dán" } }
+      }
+    },
+    "mode.settings" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Settings" } },
+        "vi" : { "stringUnit" : { "state" : "translated", "value" : "Cài Đặt" } }
+      }
+    },
+    "home.dragon_greeting" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Pick any cloud studio to play!" } },
+        "vi" : { "stringUnit" : { "state" : "translated", "value" : "Chọn một góc trên mây để chơi nhé!" } }
+      }
+    },
+    "dragon.default_name" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Puff" } },
+        "vi" : { "stringUnit" : { "state" : "translated", "value" : "Bông Mây" } }
+      }
+    },
+    "settings.language" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Language" } },
+        "vi" : { "stringUnit" : { "state" : "translated", "value" : "Ngôn ngữ" } }
+      }
+    },
+    "settings.reduce_motion" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Reduce Motion" } },
+        "vi" : { "stringUnit" : { "state" : "translated", "value" : "Giảm chuyển động" } }
+      }
+    },
+    "stub.coming_next" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : { "stringUnit" : { "state" : "translated", "value" : "Ready in the next studio loop!" } },
+        "vi" : { "stringUnit" : { "state" : "translated", "value" : "Sẽ mở đầy đủ ở vòng tiếp theo!" } }
+      }
+    }
+  },
+  "version" : "1.0"
+}

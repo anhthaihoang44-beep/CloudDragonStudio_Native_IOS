@@ -1,0 +1,8 @@
+# Architectural & Implementation Assumptions
+
+1. **State Management (`ObservableObject`)**: Because deployment target is strictly `iOS 16.0`, Swift's `@Observable` macro (iOS 17.0+) is unavailable; `ObservableObject` with `@Published`, `@StateObject`, and `@EnvironmentObject` is used instead for full iOS 16.0 compatibility.
+2. **Persistence (`Codable` JSON via `FileManager`)**: `SwiftData` requires `iOS 17.0+`, so `PersistenceService` uses atomic `Codable` JSON files inside `Application Support` / `Documents` via `FileManager`.
+3. **Rendering Choice (`Core Graphics` + `SwiftUI Canvas`)**: `Core Graphics` (`CGContext` + `CGImage` alpha masks) combined with `SwiftUI Canvas` provides deterministic, zero-spill masked brush/pattern/stamp/gradient painting and snapshot-based unlimited Undo/Redo, while `SwiftUI` `TimelineView` renders 60 fps floating clouds, bath bubbles, and sparkles without third-party dependencies.
+4. **Audio & Assets**: All app icon graphics, vector dragon artwork, backgrounds, and `.wav` sound effects are generated procedurally in-house (`scripts/generate_assets.py` and SwiftUI `Shape` paths) to guarantee 100% originality and zero third-party copyright risk.
+5. **CI Verification Environment**: Development occurs on Windows while Xcode builds, iPhone/iPad Simulator UI tests, screenshot captures, and `.ipa` packaging run automatically via GitHub Actions `macos-15`.
+6. **In-App Language Switching**: String Catalog (`Localizable.xcstrings`) supplies English (`en`) and Vietnamese (`vi`) translations; `LocalizationService` loads the active `.lproj` bundle dynamically so kids/parents can toggle language immediately inside Settings without restarting the app.

@@ -1,0 +1,16 @@
+# Xcode / macOS
+.DS_Store
+*.xcodeproj/
+!project.yml
+xcuserdata/
+DerivedData/
+build/
+ci_screenshots/
+*.xcresult
+*.xcarchive
+*.ipa
+.swiftpm/
+*.swp
+*~
+__pycache__/
+*.pyc
